@@ -1,54 +1,28 @@
-# Udagram Image Filtering Microservice
+# **Project Overview:**
 
-# Link Git Repo
-https://github.com/thanhdzu/image-filter-starter-code
+The "Udagram Image Filtering Microservice" is a part of the Udacity Cloud Engineering Nanodegree program. It involves creating a web application where users can register, log in, post photos, and process those photos using an image filtering microservice.
 
-Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.
+## Link github repo: [nhonvo/project2 (github.com)](https://github.com/nhonvo/project2)
 
-The project is split into three parts:
-1. [The Simple Frontend](https://github.com/udacity/cloud-developer/tree/master/course-02/exercises/udacity-c2-frontend)
-A basic Ionic client web application which consumes the RestAPI Backend. [Covered in the course]
-2. [The RestAPI Backend](https://github.com/udacity/cloud-developer/tree/master/course-02/exercises/udacity-c2-restapi), a Node-Express server which can be deployed to a cloud service. [Covered in the course]
-3. [The Image Filtering Microservice](https://github.com/udacity/cloud-developer/tree/master/course-02/project/image-filter-starter-code), the final project for the course. It is a Node-Express application which runs a simple script to process images. [Your assignment]
+## **Tasks:**
 
-## Tasks
+1. **Setup Node Environment:**
 
-### Setup Node Environment
+Initialize a new Node.js project by running `npm i` in the project directory.
 
-You'll need to create a new node server. Open a new terminal within the project directory and run:
+Start the development server with `npm run dev`.
 
-1. Initialize a new project: `npm i`
-2. run the development server with `npm run dev`
+2. **Create a New Endpoint in `server.ts`:**
 
-### Create a new endpoint in the server.ts file
+In the `server.ts` file, create a new endpoint that uses query parameters to download an image from a public URL, apply image filtering, and return the filtered image.
 
-The starter code has a task for you to complete an endpoint in `./src/server.ts` which uses query parameter to download an image from a public URL, filter the image, and return the result.
+Helper functions for image processing are provided in the `util/util.ts` file.
 
-We've included a few helper functions to handle some of these concepts and we're importing it for you at the top of the `./src/server.ts`  file.
+3. **Deploy Your System:**
 
-```typescript
-import {filterImageFromURL, deleteLocalFiles} from './util/util';
-```
+Follow the deployment process described in the course, including using Elastic Beanstalk (`eb init`, `eb create`, and `eb deploy`) to deploy the image-filtering service.
 
-### Deploying your system
+4. **My Elastic Beanstalk Endpoint:**http://image-filter-starter-code-dev22222222.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg
+5. **Optional: Stand Out Tasks:**
 
-Follow the process described in the course to `eb init` a new application and `eb create` a new environment to deploy your image-filter service! Don't forget you can use `eb deploy` to push changes.
-
-## My Elastic Beanstalk Endpoint
-http://image-filter-starter-code-dev22222222.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg
-
-## Stand Out (Optional)
-
-### Refactor the course RESTapi
-
-If you're feeling up to it, refactor the course RESTapi to make a request to your newly provisioned image server.
-
-### Authentication
-
-Prevent requests without valid authentication headers.
-> !!NOTE if you choose to submit this, make sure to add the token to the postman collection and export the postman collection file to your submission so we can review!
-
-### Custom Domain Name
-
-Add your own domain name and have it point to the running services (try adding a subdomain name to point to the processing server)
-> !NOTE: Domain names are not included in AWS’ free tier and will incur a cost.
+**Elastic Beanstalk Endpoint:** You've provided an Elastic Beanstalk endpoint where your image filtering service can be accessed.
