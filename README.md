@@ -22,7 +22,10 @@ Helper functions for image processing are provided in the `util/util.ts` file.
 
 Follow the deployment process described in the course, including using Elastic Beanstalk (`eb init`, `eb create`, and `eb deploy`) to deploy the image-filtering service.
 
-4. **My Elastic Beanstalk Endpoint:**http://image-filter-starter-code-dev22222222.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg
+4. **My Elastic Beanstalk Endpoint:**
+
+http://imagefilter2-dev.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg
+
 5. **Optional: Stand Out Tasks:**
 
 **Elastic Beanstalk Endpoint:** You've provided an Elastic Beanstalk endpoint where your image filtering service can be accessed.
